@@ -55,15 +55,16 @@
                         hardware-config = "nvim /home/oscar/nixos/hardware-configuration.nix";
                         pkgs = "nvim /home/oscar/nixos/pkgs.nix";
                         home-config = "nvim /home/oscar/nixos/home.nix";
-                        nrs = "git -C /home/oscar/nixos add -A; sudo nixos-rebuild switch --flake /home/oscar/nixos";
+                        nrs = "sudo nixos-rebuild switch --flake /home/oscar/nixos";
 			                  update = "nix flake update --flake /home/oscar/nixos; sudo nixos-rebuild switch --flake /home/oscar/nixos";
                         user-config = "nvim /home/oscar/nixos/user.nix";
                         internet = "impala";
                         conf = "cd /home/oscar/nixos/config/";
                         neofetch = "bash /home/oscar/nixos/config/neofetch/neofetch.sh";
                         dot = "cd /home/oscar/nixos";
-                        freespace = "sudo nix-collect-garbage -d; git -C /home/oscar/nixos add -A; sudo nixos-rebuild switch --flake /home/oscar/nixos";
+                        freespace = "sudo nix-collect-garbage -d; sudo nixos-rebuild switch --flake /home/oscar/nixos";
                         rocketserver = "ssh oscar@192.168.88.51";
+                        nixos-commit = ''cp -rf /home/oscar/nixos/* /home/oscar/nixos-dotfiles; git -C /home/oscar/nixos-dotfiles add -A; git -C /home/oscar/nixos-dotfiles commit -m "Update"; git -c /home/oscar/nixos-dotfiles push origin main'';
     };
     oh-my-zsh = {
       enable = true;
