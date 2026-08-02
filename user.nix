@@ -36,9 +36,6 @@
 
 # SSH
   services.openssh.enable = true;
-  users.users.oscar.openssh.authorizedKeys.keys = [
-    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPyYlOJcdW5kUAqVu73RgOmI7PX0Mhhd/ezS8fSa6q2K oscarjeschke@outlook.de"
-  ];
 
 # Virtualization
   virtualisation.libvirtd.enable = true;
