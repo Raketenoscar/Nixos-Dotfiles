@@ -21,6 +21,7 @@
     pfetch
     rofi
     scrcpy
+    jellyfin-desktop
     tree
     git
     wev
