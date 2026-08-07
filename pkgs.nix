@@ -18,9 +18,12 @@
     zoxide
     alacritty
     btop
+    hyprpaper
     pfetch
     rofi
     scrcpy
+    qbittorrent
+    wlroots
     jellyfin-desktop
     tree
     git
@@ -48,12 +51,10 @@
     zsh-powerlevel10k
     libreoffice-fresh
     virt-manager
-    chromium
     librewolf
     quickshell
     libnotify
     impala
-    hyprpaper
     hyprshutdown
     hyprlock
     hyprpicker

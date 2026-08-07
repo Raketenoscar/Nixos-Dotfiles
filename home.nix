@@ -63,7 +63,7 @@
                         neofetch = "bash /home/oscar/nixos/config/neofetch/neofetch.sh";
                         dot = "cd /home/oscar/nixos";
                         freespace = "sudo nix-collect-garbage -d; sudo nixos-rebuild switch --flake /home/oscar/nixos";
-                        rocketserver = "ssh oscar@192.168.88.51";
+                        rocketserver = "ssh oscar@192.168.88.50";
                         nixos-commit = ''cp -rf /home/oscar/nixos/* /home/oscar/nixos-dotfiles; git -C /home/oscar/nixos-dotfiles add -A; git -C /home/oscar/nixos-dotfiles commit -m "Update"; git -C /home/oscar/nixos-dotfiles push origin main'';
     };
     oh-my-zsh = {
