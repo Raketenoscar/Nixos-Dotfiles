@@ -136,4 +136,8 @@
 # Desktop Files
   home.file.".local/share/applications".source = ./desktop-files;
 
+# Icons (installed into the hicolor icon theme so .desktop files can
+# reference icons by name regardless of the user's home dir)
+  home.file.".icons/hicolor/scalable/apps".source = ./desktop-files/icons;
+
 }

@@ -6,21 +6,25 @@
     xwayland.enable = true;
   };
   services.mullvad-vpn.enable = true;
+  services.udisks2.enable = true;
   
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     vim
+    zoom-us
     wget
     fastfetch
     unrar-wrapper
     kdePackages.dolphin
     neovim
     zoxide
+    jdk
     alacritty
     btop
     hyprpaper
     pfetch
     rofi
+    gnome-disk-utility
     scrcpy
     qbittorrent
     wlroots

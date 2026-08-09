@@ -2,4 +2,4 @@
 Type=Application
 Name=Packages
 Exec=librewolf https://search.nixos.org/packages
-Icon=~/.local/share/application/nixos.svg
+Icon=nix-snowflake-white
