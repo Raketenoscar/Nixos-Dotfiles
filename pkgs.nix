@@ -7,6 +7,7 @@
   };
   services.mullvad-vpn.enable = true;
   services.udisks2.enable = true;
+  programs.nix-ld.enable = true;
   
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
@@ -16,12 +17,15 @@
     fastfetch
     unrar-wrapper
     kdePackages.dolphin
+    python3
     neovim
     zoxide
     jdk
     alacritty
     btop
+    desktop-file-utils
     hyprpaper
+    kdePackages.gwenview
     pfetch
     rofi
     gnome-disk-utility
@@ -32,6 +36,11 @@
     tree
     git
     wev
+    fd
+    lazygit
+    unzip
+    ghostscript
+    imagemagick
     bat
     yt-dlp
     mpv
@@ -71,6 +80,13 @@
     vscode
   ];
    
+
+  fonts.fontconfig.defaultFonts = {
+    sansSerif = [ "JetBrainsMono Nerd Font" ];
+    serif = [ "JetBrainsMono Nerd Font" ];
+    monospace = [ "JetBrainsMono Nerd Font" ];
+    emoji = [ "Noto Color Emoji" ];
+  };
 
   fonts.packages = with pkgs; [
   dejavu_fonts
