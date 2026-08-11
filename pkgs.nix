@@ -77,7 +77,7 @@
     wiremix
     wlogout
     brightnessctl
-    vscode
+    vscodium
   ];
    
 
