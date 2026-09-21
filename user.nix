@@ -80,19 +80,3 @@ services.displayManager.ly = {
     margin_box_v = 1;
   };
 };
-
-# Env Variables
-  environment.sessionVariables = {
-    LD_LIBRARY_PATH = [
-      "${pkgs.libx11}/lib"
-      "${pkgs.libxcursor}/lib"
-      "${pkgs.libxrandr}/lib"
-      "${pkgs.libxi}/lib"
-      "${pkgs.libxext}/lib"
-      "${pkgs.libxscrnsaver}/lib"
-      "${pkgs.libxinerama}/lib"
-    ];
-    SDL_VIDEODRIVER = "x11";
-  };
-}
-
